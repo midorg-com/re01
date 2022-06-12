@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>大侠不用剑</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+
+        height: 100vh;
+      }
+      .img1div {
+        background-color: #9daff1;
+        text-align: center;
+        padding: 20px;
+        height: 100px;
+      }
+      .daxiaimg {
+        height: 90px;
+        width: "90px";
+      }
+      img:hover {
+        border-radius: 200px;
+      }
+      #wodewangzhan {
+        color: rgb(70, 110, 197);
+        font-size: 13px;
+      }
+      #wodewangzhan:hover {
+        text-decoration: none;
+        color: rgb(211, 18, 60);
+      }
+      .time {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+      }
+      #timediv {
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .wenan {
+        max-width: 760px;
+        margin: 30px auto;
+        padding: 5px;
+        line-height: 3;
+        text-align: center;
+      }
+      .lianjie {
+        background-color: #9daff1;
+        text-align: center;
+        padding: 20px;
+        font-size: 12px;
+      }
+      #displaytimebtn {
+        background-image: linear-gradient(to right, #9daff1, white);
+        border: none;
+        margin-left: 20px;
+      }
+      #displaytimebtn:hover {
+        cursor: pointer;
+      }
+      #stoptimebtn {
+        background-image: linear-gradient(to left, #9daff1, white);
+        border: none;
+        margin-right: 20px;
+      }
+      #stoptimebtn:hover {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="img1div">
+      <a href="https://space.bilibili.com/430498660?spm_id_from=333.337.0.0"
+        ><img
+          class="daxiaimg"
+          title="大侠不用剑"
+          alt="大侠不用剑"
+          src="https://i1.hdslb.com/bfs/face/cbfacf4ab63fa6f7bb6f5442b51c0e5245f375bd.jpg@160w_160h_1c_1s.webp"
+      /></a>
+    </div>
+    <div class="time">
+      <input type="button" value="显示时间" id="displaytimebtn" />
+      <input type="button" value="停止时间" id="stoptimebtn" />
+    </div>
+    <div id="timediv"></div>
+    <div class="wenan">
+      <p>你好啊，我是b站的一名up主，大侠不用剑</p>
+      <p>欢迎来到我的个人网页，您可以通过该网站</p>
+      <p>跳转到我的B站首页，祝大家身体健康，万事如意</p>
+      <p>爱你的小宇</p>
+      <a href="https://space.bilibili.com/430498660?spm_id_from=333.337.0.0"
+        ><img
+          class="daxiaimg"
+          title="大侠不用剑"
+          alt="笑"
+          src="https://i1.hdslb.com/bfs/face/cbfacf4ab63fa6f7bb6f5442b51c0e5245f375bd.jpg@160w_160h_1c_1s.webp"
+        />
+      </a>
+    </div>
+    <div class="lianjie">
+      <p>版权所有： 大侠不用剑</p>
+      <a
+        id="wodewangzhan"
+        href="https://space.bilibili.com/430498660?spm_id_from=333.337.0.0"
+        >我的网站</a
+      >
+    </div>
+    <script>
+      window.onload = function () {
+        document.getElementById("displaytimebtn").onclick = function () {
+          /*  v 表示 window.setInterval("displaytime()", 1000) 的返回值value,
+            v可以传递给window.clearInterval(v) ,从而取消对"displaytime()"的周期性执行。*/
+          v = window.setInterval("displaytime()", 1000);
+        };
+        document.getElementById("stoptimebtn").onclick = function () {
+          window.clearInterval(v);
+        };
+        displaytime = function () {
+          var nowtime = new Date();
+          document.getElementById("timediv").innerHTML =
+            nowtime.toLocaleString();
+        };
+      };
+    </script>
+  </body>
+</html>
