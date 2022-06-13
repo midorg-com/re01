@@ -31,6 +31,7 @@
     - React 后台
     - Node.js
     - SSR
+    - bootstrap
     - Vue
     - 数据库及 Prisma
     - 自动化脚本
