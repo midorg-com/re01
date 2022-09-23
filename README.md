@@ -1,12 +1,11 @@
-# 《Re01：从零开始的编程之路》
+# 《Re01：从零开始的编程之路》 - commit - 1
 
 《Re01》是一套专门面向零基础同学，全程以实战为主的编程教学课。从零基础到能够独立开发商业级项目。
 
 视频地址：[https://space.bilibili.com/34786453](https://space.bilibili.com/34786453)
 
 本仓库为课程第二章第五节学习 git、github 的 pr 教学仓库。
-
-[members](./members) 目录下为所有成员提交的个人信息，一人一个 json 文件。
+git clone https://github.com/DAMAI319/re01.git .件。
 
 ## 课程目录
 
