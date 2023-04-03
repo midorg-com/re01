@@ -4,7 +4,7 @@
 
 视频地址：[https://space.bilibili.com/34786453](https://space.bilibili.com/34786453)
 
-本仓库为课程第二章第五节学习 git、github 的 pr 教学仓库。
+本仓库为学习 git、github 的 pr 教学仓库。
 
 [members](./members) 目录下为所有成员提交的个人信息，一人一个 json 文件。
 
