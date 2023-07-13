@@ -1,0 +1,10 @@
+1.先定义接口的环境变量，请求头包含的用户信息、Cookie、key等等（env_config-online\offline），
+编写yaml驱动方法封装驱动环境文件（common-ReadYaml）
+2.编写日志驱动文件（common\customsLog）,把info_log\error_log\warning_log三种日志方法编辑出来，并创建日志文件。
+，再编辑装饰器，自动装饰函数的开头信息，里面要用到info_log，最后编辑一个类装饰器，把函数开头自动套上。（common\customsLog）
+3.再编写POST\GET等的方法封装，并套上info_log，自动获取日志信息并打印到控制台。（business\apicommon）
+4.进行比较复杂的断言方法编写封装，对比结果的状态码、长度、内容。（common\check_commne）
+5.编写参数化的Yaml方法封装，进行路径拼接（ReadYaml）拼接到（data）的方法
+6.利用前面的POST\GET封装好的方法进行批量造数据、删除接口数据的方法封装，封装到business方法中，输入接口和其他参数即可直接使用。
+7.编写过程中直接使用参数化方法，参数直接放在data中，data下每个接口都有对应的数据，用封装好的Yaml方法进行调用。
+8.编写所有用例，输出日志。
