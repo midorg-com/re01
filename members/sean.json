@@ -1,5 +1,6 @@
 {
-    "name": "Sean"
-    "url": "https://sean.sample"
-    "age": 35
+    "name": "Sean",
+    "url": "https://sean.sample",
+    "age": 35,
+    "Country": "CN"
 }
