@@ -1,0 +1,10 @@
+function test() {
+			//在写JOSN的时候，记得把带上逗号
+            var txt = "{a:123," +
+                    "b:'zhongfucheng'}";
+
+            //使用eval解析JSON字符串，需要增添()
+            var aa = eval("(" + txt + ")");
+            alert(aa);
+
+        }
